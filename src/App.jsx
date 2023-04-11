@@ -24,7 +24,7 @@ function App() {
         <img className='boxBottom' src={boxBottom} alt="box" />
     </div>
       </div>
-     <button onClick={openGift}>Öppna present!</button>
+     {!open && <button onClick={openGift}>Öppna present!</button>}
      <h3 className={!open ? "" : "open"}>Du får en valfri weekend med mig i höst!</h3>
     </div>
   )
