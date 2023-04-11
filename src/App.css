@@ -1,17 +1,9 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-.container{
-  position: relative;
-}
 .box{
   position: relative;
-  z-index: 10;
+  z-index: 0;
 }
 .box.open{
-  animation: disappear ease 1.5s forwards 2s;
+  animation: disappear ease 1.5s forwards 1s;
 }
 .boxTop{
   position: absolute;
@@ -24,47 +16,65 @@
 }
 .boxBackground{
   position: absolute;
-  z-index: -999 !important;
+  z-index: -1000;
 }
 .boxBottom{
-  z-index: 100;
+  z-index: 999;
   transition: all .5s ease;
 }
 
 .gift{
-  position:relative ;
-  /* overflow: hidden; */
-  z-index: -1;
-  bottom: 30px;
-  transform: translateX(-70%);
-  /* transform: scale(-50%) translateX(30%); */
-}
-.gift.open .earth{
-  transition: all 3s ease-in;
-  animation: moveUp 2s ease forwards .5s;
-}
-.gift.open .adrian{
-  transition: all 3s ease-in;
-  animation:  appear 3s ease forwards 2.5s,moveUp 2s ease forwards .5s;
+  position:absolute ; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  height: 80vh;
+  width: 100vw;
+  opacity: 0;
 
 }
-.earth{
+
+.gift.open{
+  animation: moveUp 2s ease forwards .5s;
+  opacity: 0;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 400px;
+}
+ .earth{
   position: absolute;
+  top: -7%;
   z-index: 5;
 }
 .adrian{
   position: absolute;
+  align-self: center;
+  justify-self: center;
+  top: -35px;
   z-index: -1;
-  opacity: 0;
-}
-.adrian.open{
-  animation:  flyAround 5s linear infinite;
-}
+  animation: flyAround 3s linear infinite;
+  /* opacity: 1; */
+} 
+
 h3{
   position: absolute;
-  left: 0;
-  right: 0;
   opacity: 0;
+  top: 10%;
 }
 h3.open{
   animation: appear .5s ease forwards 3.5s;
@@ -87,11 +97,21 @@ h3.open{
   }
 }
 @keyframes moveUp {
-  from{
-    transform: translateY(-10%);
+  0%{
+    transform: translateY(0%);
+    opacity: 0;
   }
-  to{
+  20%{
     transform: translateY(-30%);
+    opacity: 1;
+  }
+  80%{
+    transform: translateY(-30%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes appear {
@@ -103,16 +123,3 @@ h3.open{
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
