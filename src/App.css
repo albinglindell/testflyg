@@ -18,13 +18,14 @@
   position: absolute;
   z-index: -1000;
 }
-.boxBottom{
+.boxTop.open .boxBottom{
+  position: absolute;
   z-index: 999;
   transition: all .5s ease;
 }
 
 .gift{
-  position:absolute ; 
+  position:absolute; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,9 +66,8 @@ width: 400px;
   align-self: center;
   justify-self: center;
   top: -35px;
-  z-index: -1;
+  z-index: 5;
   animation: flyAround 3s linear infinite;
-  /* opacity: 1; */
 } 
 
 h3{
@@ -78,7 +78,7 @@ h3{
 h3.open{
   animation: appear .5s ease forwards 2.5s;
   background: #9cce557e;
-  padding: 3px;
+  padding: 6px;
   height: 45px;
   font-weight: 500;
   border-radius: 7px;
