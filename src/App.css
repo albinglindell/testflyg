@@ -76,7 +76,13 @@ h3{
   top: 10%;
 }
 h3.open{
-  animation: appear .5s ease forwards 3.5s;
+  animation: appear .5s ease forwards 2.5s;
+  background: #9cce557e;
+  padding: 3px;
+  height: 45px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: .5px solid black;
 }
 
 @keyframes disappear {
