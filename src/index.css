@@ -67,7 +67,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #F04052;
+    background:linear-gradient(to bottom right, #F28183,#DA2A4A, #DA2A4A);
     color: #f9c254;
     text-shadow: -1px 2px 2px #000;
     border: 2px solid black;
