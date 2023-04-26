@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 body{
   background-image: url("https://static.vecteezy.com/ti/gratis-vektor/p3/2550504-sot-tecknad-bla-himmel-med-moln-och-sol-vektor-bakgrund-tapet-gratis-vector.jpg");
   background-repeat: no-repeat;
@@ -78,16 +80,20 @@ width: 400px;
 
 h3{
   position: absolute;
-  color: rgb(74, 74, 74);
+  color: rgb(47, 47, 47);
   opacity: 0;
-  top: 4%;
+  width: 80%;
+  top: 0%;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
 }
 h3.open{
   animation: appear .5s ease forwards 2.5s;
   background: #9BCE55;
   padding: 10px;
   margin: 3%;
-  font-weight: 500;
   border-radius: 7px;
   border: .5px solid black;
 }
@@ -134,4 +140,5 @@ h3.open{
     opacity: 1;
   }
 }
+
 
