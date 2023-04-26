@@ -25,7 +25,7 @@ function App() {
     </div>
       </div>
      {!open && <button onClick={openGift}>Öppna present!</button>}
-     <h3 className={!open ? "" : "open"}>Grattis på 30 årsdagen! <br/>Du får en valfri weekend med mig i höst!</h3>
+     <h3 className={!open ? "" : "open"}>Grattis på 30 årsdagen! <br/>Jag bjuder på flyg och hotell för vi ska till Prag!</h3>
     </div>
   )
 }

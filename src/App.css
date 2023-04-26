@@ -1,3 +1,9 @@
+body{
+  background-image: url("https://static.vecteezy.com/ti/gratis-vektor/p3/2550504-sot-tecknad-bla-himmel-med-moln-och-sol-vektor-bakgrund-tapet-gratis-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .box{
   position: relative;
   z-index: 0;
@@ -74,13 +80,13 @@ h3{
   position: absolute;
   color: rgb(74, 74, 74);
   opacity: 0;
-  top: 10%;
+  top: 4%;
 }
 h3.open{
   animation: appear .5s ease forwards 2.5s;
-  background: #9cce557e;
-  padding: 6px;
-  height: 45px;
+  background: #9BCE55;
+  padding: 10px;
+  margin: 3%;
   font-weight: 500;
   border-radius: 7px;
   border: .5px solid black;
