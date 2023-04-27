@@ -1,9 +1,12 @@
 import { useState } from 'react'
-import boxBottom from "./assets/box.png"
-import boxBackground from "./assets/backgroundBox.png"
-import boxTop from "./assets/boxtop.png"
+// import boxBottom from "./assets/box.png"
+// import boxBackground from "./assets/backgroundBox.png"
+// import boxTop from "./assets/boxtop.png"
 import adrian from "./assets/flygplan.png"
 import earth from "./assets/earth.png"
+import boxBottom from "./assets/chewbaccaBottom.png"
+import boxTop from "./assets/chewbaccaTop.png"
+import boxBackground from "./assets/backgroundBacca.png"
 import './App.css'
 
 function App() {
